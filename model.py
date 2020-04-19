@@ -37,7 +37,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random
 app_success_model = LogisticRegression(max_iter=4000)
 app_success_model.fit(X_train, y_train)
 
-filename = 'app_success_model'
+filename = 'app_success_model.pickle'
 model = app_success_model
 
 pickle.dump(model, open(filename, 'wb'))
